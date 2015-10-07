@@ -1,0 +1,42 @@
+.container
+    .well
+        h2 Contact Us
+
+        form.form-horizontal(name="signupForm")
+                div
+                .form-group
+                    label.col-md-2.control-label(for="fname") First Name
+                    .col-md-10
+                        input.form-control(name="fname", type="text", placeholder="First Name", ng-model="fname", required)
+                .form-group
+                    label.col-md-2.control-label(for="lname") Last Name
+                    .col-md-10
+                        input.form-control(name="lname", type="text", placeholder="Last Name", ng-model="lname", required)
+                .form-group
+                    label.col-md-2.control-label(for="email") Email
+                    .col-md-10
+                        input.form-control(name="email", type="email", placeholder="Email", ng-model="email", required)
+
+                .form-group
+                    label.col-md-2.control-label(for="email") Phone
+                    .col-md-10
+                        input.form-control(name="email", type="phone", placeholder="Phone", ng-model="phone", required)
+                .form-group
+                    label.col-md-2.control-label(for="lname") Company or Club
+                    .col-md-10
+                        input.form-control(name="lname", type="text", placeholder="Company or Club", ng-model="lname", required)
+                .form-group
+                    label.col-md-2.control-label(for="lname") Title or Role
+                    .col-md-10
+                        input.form-control(name="lname", type="text", placeholder="Title or Role", ng-model="lname", required)
+                .form-group
+                    label.col-md-2.control-label(for="lname") Comments
+                    .col-md-10
+                        input.form-control(name="lname", type="text", placeholder="Comments", ng-model="lname", required)
+                .form-group
+                    .col-md-10.col-md-offset-2
+                        .pull-right
+                            button.btn.btn-primary(ng-click="signup()", ng-disabled="signupForm.$invalid") Submit
+                            | &nbsp;
+                            a.btn.btn-default(href="/") Cancel
+                <img src="/images/US.png" alt="Generic placeholder image" width="auto" height="200">

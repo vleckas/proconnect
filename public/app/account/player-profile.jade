@@ -1,0 +1,96 @@
+.container
+    .well
+        h2 <img src="/images/messi.jpeg" class="img-thumbnail" alt="Generic placeholder image" width="100" height="auto">
+            | Lionel Messi
+
+        fieldset
+            legend
+                    b Bio
+            table
+
+                <div class="panel panel-default">
+                <div class="panel-heading">
+                <div class="panel-body">
+
+                h5
+                    b Full Name: Lionel Messi
+                h5
+                    b Position: Forward
+                h5
+                    b Age: 28
+                h5
+                    b DOB: 5/21/1987
+                h5
+                    b POB: Sante Fe, Argentina
+                h5
+                    b Height: 5'6"
+                h5
+                    b Weight: 148 lbs
+                h5
+                    b Club: Barcelona FC
+                h5
+                    b Country: Argentina
+        fieldset
+            legend
+                    b Intelligence & Analytics
+            table
+
+                <div class="panel panel-default">
+                <div class="panel-heading">
+                <div class="panel-body">
+
+                h5
+                    b Previous Game Data: {{OPTA API PLACEHOLDER}}
+                h5
+                    b Strengths: {{OPTA API PLACEHOLDER}}
+                h5
+                    b Weaknesses: {{OPTA API PLACEHOLDER}}
+                h5
+                    b Career High: {{OPTA API PLACEHOLDER}}
+                h5
+                    b Career Low: {{OPTA API PLACEHOLDER}}
+                h5
+                    b Technique: {{OPTA API PLACEHOLDER}}
+                h5
+                    b Tactics: {{OPTA API PLACEHOLDER}}
+                h5
+                    b Teamwork: {{OPTA API PLACEHOLDER}}
+                h5
+                    b Temperament: {{OPTA API PLACEHOLDER}}
+
+        fieldset
+            legend
+                    b Network
+            table
+
+                <div class="panel panel-default">
+                <div class="panel-heading">
+                <div class="panel-body">
+
+                h5
+                    b Transfer History: [MONGODB PLACEHOLDER]
+                h5
+                    b Transfer Status: [MONGODB PLACEHOLDER]
+                h5
+                    b Player Connections: [MONGODB PLACEHOLDER]
+                h5
+                    b Club Connections: [MONGODB PLACEHOLDER]
+                h5
+                    b Marketability: [MONGODB PLACEHOLDER]
+                h5
+                    b Sponsorships: [MONGODB PLACEHOLDER]
+                h5
+                    b Endorsements: [MONGODB PLACEHOLDER]
+                h5
+                    b Charities: [MONGODB PLACEHOLDER]
+                h5
+                    b Overall Rating: [ALGORITHM PLACEHOLDER]
+
+            .form-group
+                        .col-md-10.col-md-offset-2
+                            .pull-right
+                                button.btn.btn-warning(ng-click="update()", ng-disabled="signupForm.$invalid") Edit Profile
+                                | &nbsp;
+                                button.btn.btn-primary(ng-click="update()", ng-disabled="signupForm.$invalid") Save Profile
+                                | &nbsp;
+                                a.btn.btn-default(href="/") Cancel

@@ -1,0 +1,28 @@
+{
+  "name": "proconnect",
+  "version": "0.0.0",
+  "authors": [
+    "vleckas <vas.leckas@gmail.com>"
+  ],
+  "moduleType": [
+    "node"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.6",
+    "angular-resource": "~1.4.6",
+    "angular-route": "~1.4.6",
+    "bootstrap": "~3.3.5",
+    "jquery": "~2.1.4",
+    "stylus": "~0.52.4",
+    "toastr": "~2.1.2"
+  }
+}

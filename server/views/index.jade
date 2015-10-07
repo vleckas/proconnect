@@ -1,0 +1,25 @@
+extends ../includes/layout
+
+block main-content
+    .navbar.navbar-inverse.navbar-fixed-top
+        .container
+            .navbar-header
+                a.navbar-brand(href="/") ProConnect
+            .navbar-collapse.collapse
+                ul.nav.navbar-nav
+                    li
+                        a(href="/") Home
+
+                    li
+                        a(href="/about-us") About Us
+
+                    li
+                        a(href="/contact-us") Contact Us
+
+                div(ng-include="'/partials/account/navbar-login'")
+
+    section.content
+        div(ng-view)
+
+    footer.container.text-center
+        p &copy; 2015 ProConnect Corp International Ltd.
